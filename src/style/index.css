@@ -1,9 +1,41 @@
-head > #header_banner {
+#head > #header_banner {
   width: 100%;
   height: 120px;
 }
-head > #header_banner > a {
+#head > #header_banner > a {
+  display: block;
   width: 100%;
   height: 100%;
   background: red;
+}
+#head .header_nav {
+  height: 40px;
+  background: #333333;
+}
+#head .header_nav .header_nav_left {
+  float: left;
+  font-size: 12px;
+  line-height: 40px;
+  color: #424242;
+}
+#head .header_nav .header_nav_left a {
+  color: #b0b0b0;
+}
+#head .header_nav .header_nav_left a:hover {
+  color: #fff;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5) {
+  color: red;
+}
+#head .header_nav .header_nav_right {
+  float: right;
+  font-size: 12px;
+  line-height: 40px;
+  color: #424242;
+}
+#head .header_nav .header_nav_right .link {
+  color: #b0b0b0;
+}
+#head .header_nav .header_nav_right .sop {
+  float: right;
 }

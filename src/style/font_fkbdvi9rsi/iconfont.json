@@ -1,0 +1,100 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "f0179",
+      "unicode_decimal": 983417
+    },
+    {
+      "icon_id": "706853",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "825060",
+      "name": "手机",
+      "font_class": "shouji54",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "1301354",
+      "name": "扳手",
+      "font_class": "banshou",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "4598257",
+      "name": "大于号",
+      "font_class": "dayuhao",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "6602134",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "7069152",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "11749444",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "12291348",
+      "name": "箭头 右",
+      "font_class": "jiantouyou",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "12670569",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "12990742",
+      "name": "人",
+      "font_class": "ren-",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "13638669",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "14966524",
+      "name": "7天退换货",
+      "font_class": "7tiantuihuanhuo",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}

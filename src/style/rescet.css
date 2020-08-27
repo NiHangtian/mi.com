@@ -20,57 +20,67 @@ legend,
 input,
 textarea,
 select {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  font-size: 16px;
-  font-family: '微软雅黑';
+    font-size: 16px;
+    font-family: '微软雅黑';
 }
+
 ul,
 ol,
 li {
-  list-style: none;
+    list-style: none;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-size: 16px;
-  font-weight: normal;
+    font-size: 16px;
+    font-weight: normal;
 }
+
 b,
 strong {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 i,
 em {
-  font-style: normal;
+    font-style: normal;
 }
+
 a,
 u {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 img {
-  border: 0;
-  display: block;
+    border: 0;
+    display: block;
 }
+
 input,
 fieldset {
-  outline: none;
-  border: 0;
+    outline: none;
+    border: 0;
 }
+
 .clear_fix:after {
-  content: '.';
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  display: block;
-  visibility: hidden;
+    content: '.';
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
 }
+
 .warpper {
-  width: 1226px;
-  margin: 0 auto;
+    width: 1226px;
+    margin: 0 auto;
 }

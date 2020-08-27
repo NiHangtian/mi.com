@@ -1,15 +1,47 @@
 
-head{
+#head{
 >#header_banner{
     width: 100%;
     height: 120px;
     >a{
+        display: block;
         width: 100%;
         height: 100%;
         background:red;
+        
     }
 }
 .header_nav{
+    height: 40px;
+    background:#333333;
+    .header_nav_left{
+        float: left;
+        font-size: 12px;
+        line-height: 40px;
+        color: #424242;
+        a{
+            color:#b0b0b0;
+            &:hover{
+                color: #fff;
+            }
+            &:nth-last-child(5){
+                color: red;
 
+            }
+        }
+    }
+    .header_nav_right{
+        float: right;
+        font-size: 12px;
+        line-height: 40px;
+        color: #424242;
+        .link{
+            color:#b0b0b0;
+        }
+        .sop{
+            float: right;
+            
+        }
+    }
 }
 }
