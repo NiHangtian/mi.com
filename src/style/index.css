@@ -1,0 +1,9 @@
+head > #header_banner {
+  width: 100%;
+  height: 120px;
+}
+head > #header_banner > a {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
