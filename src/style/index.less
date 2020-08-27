@@ -7,7 +7,8 @@
         display: block;
         width: 100%;
         height: 100%;
-        background:red;
+        background:url(../images/index_header/271a0ad51f0b0760ed9cb46791fb2b31.jpg) center;
+        background-size: auto 120px;
         
     }
 }
@@ -25,23 +26,147 @@
                 color: #fff;
             }
             &:nth-last-child(5){
-                color: red;
-
+            
+                position: relative;
+                display: inline-block;
+                &::after{
+                    content: '';
+                    display: none;
+                    width: 0;
+                    height: 0;
+                    border:10px solid rgba(255, 255,255, 0);
+                    border-bottom:10px solid #fff;
+                    position: absolute;
+                    right: 50%;
+                   bottom: 0;
+                    margin-right: -10px;
+                    z-index: 10;
+                }
+                &:hover::after{
+                    display: none;
+                }
+                &:hover i{
+                    height: 148px;
+                }
+                >i{
+                    display: inline-block;
+                    position: absolute;
+                    top: 40px;
+                    left: -80%;
+                    width: 124px;
+                    height: 0;
+                    box-shadow: 0 1px 5px #aaa;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #333;
+                    transition: height .3s;
+                    line-height: 1;
+                    overflow: hidden;
+                   
+                   
+                    >img{
+                        width: 90px;
+                        height: 90px;
+                        margin:18px auto 12px
+                    }
+                }
             }
         }
     }
     .header_nav_right{
         float: right;
+
         font-size: 12px;
         line-height: 40px;
         color: #424242;
+        .topbar-info{
+            float: right;
+        }
         .link{
             color:#b0b0b0;
         }
         .sop{
+            padding-left: 20px;
             float: right;
-            
+            width: 120px;
+            height: 100%;
+            position: relative;
+            &:hover>a{
+                background:#fff;
+                color: #ff6700;
+            }
+            a>{
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #b0b0b0;  
+                background: #424242;         
+            }
+            &:hover .cart-menu{
+               height:100px ; 
+            }
+            .cart-menu{
+                position: absolute;
+                right: 0;
+                top: 40px;
+                z-index: 31;
+                width: 316px;
+                height: 0;
+                color: #424242;
+                background: #fff;
+                -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.15);
+                box-shadow: 0 2px 10px rgba(0,0,0,.15);
+                overflow: hidden;
+                -webkit-transition: height .3s;
+                transition: height .3s;
+                text-align:center;
+                >div{
+                    line-height: 100px;
+                }
+            }
         }
     }
 }
+}
+.header_nav2{
+    height: 100px;
+    >.header_logo{
+        float: left;
+        >a{
+            margin-top: 23px;
+            display: block;
+            width: 55px;
+            height: 55px;
+            background:#ff6700;
+            position: relative;
+            &:hover::before{
+                background: url(../images/index_header/mi-home.png) no-repeat  center;
+            }
+            &:hover::after{
+                background: url(../images/index_header/mi-home.png) no-repeat 55px  center;
+            }
+            &::before{
+                content: "";
+                display: block;
+                background: url(../images/index_header/mi-home.png) no-repeat -55px center;
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                transition: all 0.3s;
+            }
+            &::after{
+                content: "";
+                display: block;
+                background: url(../images/index_header/mi-logo.png) no-repeat center;
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .nav{
+        float: left;
+    }
 }

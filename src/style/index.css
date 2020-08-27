@@ -6,7 +6,8 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: red;
+  background: url(../images/index_header/271a0ad51f0b0760ed9cb46791fb2b31.jpg) center;
+  background-size: auto 120px;
 }
 #head .header_nav {
   height: 40px;
@@ -25,7 +26,47 @@
   color: #fff;
 }
 #head .header_nav .header_nav_left a:nth-last-child(5) {
-  color: red;
+  position: relative;
+  display: inline-block;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5)::after {
+  content: '';
+  display: none;
+  width: 0;
+  height: 0;
+  border: 10px solid rgba(255, 255, 255, 0);
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin-right: -10px;
+  z-index: 10;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5):hover::after {
+  display: none;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5):hover i {
+  height: 148px;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5) > i {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: -80%;
+  width: 124px;
+  height: 0;
+  box-shadow: 0 1px 5px #aaa;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  transition: height 0.3s;
+  line-height: 1;
+  overflow: hidden;
+}
+#head .header_nav .header_nav_left a:nth-last-child(5) > i > img {
+  width: 90px;
+  height: 90px;
+  margin: 18px auto 12px;
 }
 #head .header_nav .header_nav_right {
   float: right;
@@ -33,9 +74,91 @@
   line-height: 40px;
   color: #424242;
 }
+#head .header_nav .header_nav_right .topbar-info {
+  float: right;
+}
 #head .header_nav .header_nav_right .link {
   color: #b0b0b0;
 }
 #head .header_nav .header_nav_right .sop {
+  padding-left: 20px;
   float: right;
+  width: 120px;
+  height: 100%;
+  position: relative;
+}
+#head .header_nav .header_nav_right .sop:hover > a {
+  background: #fff;
+  color: #ff6700;
+}
+#head .header_nav .header_nav_right .sop a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #b0b0b0;
+  background: #424242;
+}
+#head .header_nav .header_nav_right .sop:hover .cart-menu {
+  height: 100px ;
+}
+#head .header_nav .header_nav_right .sop .cart-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 31;
+  width: 316px;
+  height: 0;
+  color: #424242;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align: center;
+}
+#head .header_nav .header_nav_right .sop .cart-menu > div {
+  line-height: 100px;
+}
+.header_nav2 {
+  height: 100px;
+}
+.header_nav2 > .header_logo {
+  float: left;
+}
+.header_nav2 > .header_logo > a {
+  margin-top: 23px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: #ff6700;
+  position: relative;
+}
+.header_nav2 > .header_logo > a:hover::before {
+  background: url(../images/index_header/mi-home.png) no-repeat center;
+}
+.header_nav2 > .header_logo > a:hover::after {
+  background: url(../images/index_header/mi-home.png) no-repeat 55px center;
+}
+.header_nav2 > .header_logo > a::before {
+  content: "";
+  display: block;
+  background: url(../images/index_header/mi-home.png) no-repeat -55px center;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  transition: all 0.3s;
+}
+.header_nav2 > .header_logo > a::after {
+  content: "";
+  display: block;
+  background: url(../images/index_header/mi-logo.png) no-repeat center;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  transition: all 0.3s;
+}
+.header_nav2 .nav {
+  float: left;
 }
