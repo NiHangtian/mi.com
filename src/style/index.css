@@ -208,6 +208,15 @@
   height: 0;
   background: #ff6700;
   transition: all 0.3s;
+  z-index: 100;
+}
+.lookall {
+  float: right;
+  font-size: 16px;
+  color: #434343;
+}
+.lookall:hover {
+  color: #ff7600;
 }
 .fuwu {
   font-size: 16px;
