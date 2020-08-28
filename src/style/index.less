@@ -129,10 +129,15 @@
     }
 }
 }
+.header_bottom{
+    position: relative;
+}
 .header_nav2{
     height: 100px;
+    
     >.header_logo{
         float: left;
+        
         >a{
             margin-top: 23px;
             display: block;
@@ -166,7 +171,98 @@
             }
         }
     }
-    .nav{
-        float: left;
+    .nav{     
+    z-index: 10;
+    float: left;
+    width: 800px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    font-size: 16px;float: left;
+
+        >.navcat{
+            float: left;
+            width: 127px;
+            padding-right: 15px;
+            padding-left: 7px;
+            height: 88px;
+            background: #ff6700;
+        }
+        .nav_list{
+            float: left;
+            list-style-type: none;
+            &:hover>.nav_li_hov{
+                border-top: 1px solid #e0e0e0;
+                height: 230px;
+            }
+            >.nav_li{
+                float: left;
+                &:hover>a{
+                    color: #ff6700;
+                }
+                >a{
+                    font-size: 16px;
+                    color: #333;
+                    display: block;
+                    padding: 26px 10px 38px;
+                }
+            }
+            >.nav_li_hov{      
+                position: absolute;
+                left: 0;
+                top: 99px;
+                width: 100vw;
+                overflow: hidden;
+                height: 0;
+                background: #ff6700;
+                transition:all 0.3s   
+            }
+
+            
+        }
     }
+}
+.fuwu{
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    padding: 26px 10px 38px;
+    &:hover{
+        color: #ff7600;
+    }
+}
+.select{
+    float: right;
+    height: 50px;
+    position: relative;
+    margin-top:25px;
+    width: 295px;
+    &:hover input {
+        border-color: #b0b0b0;
+    }
+    &:hover button {
+        border-color: #b0b0b0;
+    }
+    >input{
+        box-sizing: border-box;
+        position: absolute;
+        right: 52px;
+        height: 50px;
+        border:1px solid #e0e0e0;
+        border-right:0px;
+        width: 245px;
+    }
+    >button{
+        box-sizing: border-box;
+        position: absolute;
+        width: 52px;
+        height: 50px;
+        border:1px solid #e0e0e0;
+        right: 0;
+        &:hover{
+            background: #ff7600;
+            border:0;
+        }
+    }
+
 }
