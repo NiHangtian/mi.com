@@ -1,0 +1,115 @@
+.navcat {
+  text-align: right;
+  position: relative;
+}
+.navcat > span {
+  display: inline-block;
+  padding-top: 26px ;
+}
+.navcat > .banner_nav {
+  top: 88px;
+  left: -92px;
+  z-index: 21;
+  width: 234px;
+  height: 460px;
+  position: absolute;
+  height: 418px;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  border: 1px solid #ff6700;
+  color: #424242;
+  background: #fff;
+  font-size: 14px;
+}
+.navcat > .banner_nav .banner_nav_son {
+  text-align: left;
+}
+.navcat > .banner_nav .banner_nav_son:hover > .children {
+  display: block;
+}
+.navcat > .banner_nav .banner_nav_son > .children {
+  width: 992px;
+  display: none;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  z-index: 24;
+  height: 458px;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.navcat > .banner_nav .banner_nav_son > .children > ul {
+  width: 248px;
+  float: left;
+  height: 458px;
+  margin: 0;
+  padding: 2px 0;
+}
+.navcat > .banner_nav .banner_nav_son > .children > ul > li {
+  position: relative;
+  float: left;
+  width: 265px;
+  height: 76px;
+}
+.navcat > .banner_nav .banner_nav_son > .children > ul > li a {
+  display: block;
+  padding: 18px 20px;
+  line-height: 40px;
+  color: #333;
+  transition: color 0.2s;
+}
+.navcat > .banner_nav .banner_nav_son > .children > ul > li a > img {
+  float: left;
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.navcat > .banner_nav .banner_nav_son > a {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  height: 42px;
+  line-height: 42px;
+  color: #424242;
+}
+.navcat > .banner_nav .banner_nav_son > a:hover {
+  color: #fff;
+  background: #ff7600;
+}
+.navcat > .banner_nav .banner_nav_son > a > span {
+  font-weight: 900;
+  color: #e0e0e0;
+  float: right;
+  margin-right: 30px;
+}
+.header_sopin {
+  position: relative;
+  height: 63px;
+  width: 100%;
+  margin-top: 0;
+  color: #616161;
+  z-index: 4;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+}
+.header_sopin > .warpper > span {
+  float: left;
+  line-height: 63px;
+  font-size: 18px;
+  color: #424242;
+}
+.header_sopin > .warpper > a {
+  float: right;
+  line-height: 63px;
+  color: #616161;
+  font-size: 14px;
+}
+.header_sopin > .warpper > a:hover {
+  color: #ff7600;
+}

@@ -19,16 +19,15 @@
 }
 .main_top > .banner_nav > .banner_nav_son {
   height: 42px;
-  padding-left: 40px;
   line-height: 42px;
   font-weight: 900;
+  text-align: left;
 }
 .main_top > .banner_nav > .banner_nav_son > a {
   color: #fff;
 }
 .main_top > .banner_nav > .banner_nav_son > a > span {
   float: right;
-  padding-right: 30px;
 }
 .main_top_bottom {
   width: 100%;

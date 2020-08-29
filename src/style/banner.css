@@ -1,0 +1,61 @@
+.banner_nav .banner_nav_son:hover > .children {
+  display: block;
+}
+.banner_nav .banner_nav_son > .children {
+  width: 992px;
+  display: none;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  z-index: 24;
+  height: 458px;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.banner_nav .banner_nav_son > .children > ul {
+  width: 248px;
+  float: left;
+  height: 458px;
+  margin: 0;
+  padding: 2px 0;
+}
+.banner_nav .banner_nav_son > .children > ul > li {
+  position: relative;
+  float: left;
+  width: 265px;
+  height: 76px;
+}
+.banner_nav .banner_nav_son > .children > ul > li a {
+  display: block;
+  padding: 18px 20px;
+  line-height: 40px;
+  color: #333;
+  transition: color 0.2s;
+}
+.banner_nav .banner_nav_son > .children > ul > li a > img {
+  float: left;
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.banner_nav .banner_nav_son > a {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  height: 42px;
+  line-height: 42px;
+  color: #424242;
+}
+.banner_nav .banner_nav_son > a:hover {
+  color: #fff;
+  background: #ff7600;
+}
+.banner_nav .banner_nav_son > a > span {
+  font-weight: 900;
+  color: #e0e0e0;
+  float: right;
+  margin-right: 30px;
+}
