@@ -311,3 +311,22 @@
   font-size: 12px;
   color: #ff6700;
 }
+.brick-item .list-mo i {
+  float: right;
+  font-size: 48px !important;
+  line-height: 48px !important;
+  color: #ff7600;
+  text-align: right;
+  margin-right: 40px;
+}
+.brick-item .list-mo h3 {
+  display: block;
+  margin: 0 110px 0 30px;
+  font-size: 18px;
+  color: #333;
+}
+.brick-item .list-mo p {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+}

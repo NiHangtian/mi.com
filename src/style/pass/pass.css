@@ -1,0 +1,151 @@
+.h_panel {
+  width: 1130px;
+  margin: 0 auto;
+}
+.h_logo {
+  width: 200px;
+  height: 98px;
+  background: url(../../images/pass/mistore_logo.png) no-repeat;
+}
+.h_logo > a {
+  display: block;
+  height: 98px;
+  text-indent: -9999em;
+}
+#J_panel {
+  width: 100%;
+  height: 588px;
+  position: absolute;
+  left: 0;
+  top: 98px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1;
+}
+#J_panel > a {
+  display: block;
+  height: 588px;
+  text-indent: -9999em;
+}
+.main_content {
+  width: 410px;
+  float: right;
+  background: #fff;
+}
+.main_content .nav_tabs {
+  padding: 27px 0 24px;
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+}
+.main_content .nav_tabs a {
+  color: #666;
+}
+.main_content .nav_tabs .line {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px 0 42px;
+  border: 1px solid #e0e0e0;
+}
+.main_content .nav_tabs a:hover,
+.main_content .nav_tabs a.now {
+  color: #f56600;
+}
+.main_content .main_login {
+  width: 348px;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+.main_content .main_login > input {
+  width: 306px;
+  height: 22px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+  color: #4a4a4a;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 14px;
+}
+.main_content .main_login > button {
+  box-sizing: border-box;
+  background-color: #ff6700;
+  width: 338px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  margin-top: 24px;
+}
+.main_content .main_login .btn_gray {
+  display: block;
+  text-align: center;
+  color: #ff6700;
+  border: 0 none;
+  height: auto;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.main_content .main_login .n_links_area {
+  padding-top: 0;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+}
+.main_content .main_login .n_links_area > a {
+  color: #999;
+}
+.main_content .main_login .n_links_area > a:hover {
+  color: #ff7600;
+}
+main {
+  margin-top: 23px;
+}
+.content_bottom {
+  padding-top: 143px;
+  text-align: center;
+}
+.content_bottom .oth_type_tit {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+.content_bottom .oth_type_tit .oth_type_txt {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0 auto;
+  text-align: center;
+}
+.content_bottom .dl_fs {
+  padding-top: 3px;
+  height: 36px;
+}
+.n-footer {
+  background: #fff;
+  margin-top: 0;
+  padding-top: 100px;
+  position: relative;
+  z-index: 4;
+  height: 80px;
+  text-align: center;
+  font-size: 14px;
+}
+.n-footer .nf-link-area {
+  text-align: center;
+}
+.n-footer .nf-link-area li {
+  display: inline-block;
+}
+.n-footer .nf-link-area li a {
+  color: #757575;
+}
+.n-footer .nf-link-area li > a:hover {
+  color: #333;
+}
+.n-footer .nf-intro {
+  padding: 10px;
+}

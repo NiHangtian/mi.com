@@ -139,15 +139,15 @@
   position: relative;
 }
 .header_nav2 > .header_logo > a:hover::before {
-  background: url(../images/index_header/mi-home.png) no-repeat center;
+  background: url(../../images/index_header/mi-home.png) no-repeat center;
 }
 .header_nav2 > .header_logo > a:hover::after {
-  background: url(../images/index_header/mi-home.png) no-repeat 55px center;
+  background: url(../../images/index_header/mi-home.png) no-repeat 55px center;
 }
 .header_nav2 > .header_logo > a::before {
   content: "";
   display: block;
-  background: url(../images/index_header/mi-home.png) no-repeat -55px center;
+  background: url(../../images/index_header/mi-home.png) no-repeat -55px center;
   width: 55px;
   height: 55px;
   position: absolute;
@@ -156,7 +156,7 @@
 .header_nav2 > .header_logo > a::after {
   content: "";
   display: block;
-  background: url(../images/index_header/mi-logo.png) no-repeat center;
+  background: url(../../images/index_header/mi-logo.png) no-repeat center;
   width: 55px;
   height: 55px;
   position: absolute;
