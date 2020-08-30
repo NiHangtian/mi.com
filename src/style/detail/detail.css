@@ -6,7 +6,11 @@
   display: inline-block;
   padding-top: 26px ;
 }
+.navcat:hover > .banner_nav {
+  display: block;
+}
 .navcat > .banner_nav {
+  display: none ;
   top: 88px;
   left: -92px;
   z-index: 21;

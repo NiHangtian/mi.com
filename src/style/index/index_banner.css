@@ -8,7 +8,11 @@
   height: 460px;
   background: skyblue;
 }
-.main_top > .banner_nav {
+.main_top .banner > div {
+  width: 100%;
+  height: 100%;
+}
+.banner_nav {
   height: 460px;
   background: rgba(105, 101, 101, 0.6);
   padding: 20px 0;
@@ -17,16 +21,16 @@
   box-sizing: border-box;
   position: relative;
 }
-.main_top > .banner_nav > .banner_nav_son {
+.banner_nav > .banner_nav_son {
   height: 42px;
   line-height: 42px;
   font-weight: 900;
   text-align: left;
 }
-.main_top > .banner_nav > .banner_nav_son > a {
+.banner_nav > .banner_nav_son > a {
   color: #fff;
 }
-.main_top > .banner_nav > .banner_nav_son > a > span {
+.banner_nav > .banner_nav_son > a > span {
   float: right;
 }
 .main_top_bottom {

@@ -193,6 +193,7 @@
             list-style-type: none;
             &:hover>.nav_li_hov{
                 border-top: 1px solid #e0e0e0;
+                box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
                 height: 230px;
             }
             >.nav_li{
@@ -214,9 +215,52 @@
                 width: 100vw;
                 overflow: hidden;
                 height: 0;
-                background: #ff6700;
+                
+                background: #fff;
                 transition:all 0.3s;
                 z-index: 100;
+                
+                ul{ 
+                    display: none;
+                    & li:nth-child(1)::before{
+                        display: none  !important;
+                    }
+                    >li{
+                        position: relative;
+                        float: left;
+                        width: 180px;
+                        padding: 35px 12px 0;
+                        text-align: center;
+                        font-size: 12px;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            height: 100px;
+                            width: 1px;
+                            top:35px;
+                            left: 0;
+                            background:#e0e0e0;
+                        }
+                        img{
+                            width: 160px;
+                            height: 110px;
+                            margin:0 auto;
+                        }
+                        span{
+                            width: 100%;
+                            display: block;
+                            color: #333;
+                            line-height: 20px;
+
+                        }
+                        p{
+                            margin: 0;
+                            line-height: 20px;
+                            color: #ff6700;
+                        }
+                    }
+                }
             }
 
             
@@ -277,3 +321,7 @@
 
 }
 
+
+.disblock{
+    display: block !important;
+}

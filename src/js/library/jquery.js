@@ -10859,10 +10859,14 @@
     // and CommonJS for browser emulators (#13566)
     if (typeof noGlobal === "undefined") {
         window.jQuery = window.$ = jQuery;
+
     }
 
 
 
 
     return jQuery;
+
+
 });
+export default $;

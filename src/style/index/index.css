@@ -184,6 +184,7 @@
 }
 .header_nav2 .nav .nav_list:hover > .nav_li_hov {
   border-top: 1px solid #e0e0e0;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
   height: 230px;
 }
 .header_nav2 .nav .nav_list > .nav_li {
@@ -205,9 +206,49 @@
   width: 100vw;
   overflow: hidden;
   height: 0;
-  background: #ff6700;
+  background: #fff;
   transition: all 0.3s;
   z-index: 100;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul {
+  display: none;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul li:nth-child(1)::before {
+  display: none  !important;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul > li {
+  position: relative;
+  float: left;
+  width: 180px;
+  padding: 35px 12px 0;
+  text-align: center;
+  font-size: 12px;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul > li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  width: 1px;
+  top: 35px;
+  left: 0;
+  background: #e0e0e0;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul > li img {
+  width: 160px;
+  height: 110px;
+  margin: 0 auto;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul > li span {
+  width: 100%;
+  display: block;
+  color: #333;
+  line-height: 20px;
+}
+.header_nav2 .nav .nav_list > .nav_li_hov ul > li p {
+  margin: 0;
+  line-height: 20px;
+  color: #ff6700;
 }
 .lookall {
   float: right;
@@ -259,4 +300,7 @@
 .select > button:hover {
   background: #ff7600;
   border: 0;
+}
+.disblock {
+  display: block !important;
 }
