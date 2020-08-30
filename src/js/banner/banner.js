@@ -44,6 +44,7 @@ import $ from '../library/jquery.js';
                 })
                 elms.banLi.on('click', function() {
                     next(elms.banLi.index(this))
+                    console.log(elms.banLi.index(this));
                 })
                 elms.banSpan.on('click', function() {
                     console.log(elms.banSpan.index(this));
@@ -62,13 +63,26 @@ import $ from '../library/jquery.js';
 
             }
             next = function(index) { //下一张
-                elms.index = index - 1 || elms.index
-                elms.index++;
-                let left = elms.index * elms.imgWidth
-                console.log(left);
+                // console.log(index);
+                let tpe = Object.prototype.toString.call(index).slice(8, -1)
+
+
+                elms.index++
+                    if (tpe != 'Undefined') {
+                        elms.index = index
+                    }
+
+
+
+
+
+
+                let left = elms.index * elms.imgWidth * -1
+
                 elms.banDiv.animate({
-                    left: -left + 'px'
+                    left: left + 'px'
                 }, defaults.speek, function() {
+
                     if (elms.index >= elms.banImg.length - 1) {
                         elms.index = 0;
                         elms.banDiv.css('left', 0)
@@ -101,5 +115,8 @@ import $ from '../library/jquery.js';
         }
     })
 
-
+    $('#banner_s').banner({
+        speek: 600,
+        delay: 5000
+    })
 }))($)
