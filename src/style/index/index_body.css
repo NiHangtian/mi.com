@@ -233,6 +233,8 @@
   height: 18px;
   font-size: 12px;
   color: #b0b0b0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .sj_box .sj_box_right > .sj_son em {
   display: block;

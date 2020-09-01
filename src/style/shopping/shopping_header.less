@@ -1,0 +1,74 @@
+#header{
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 20;
+    height: 100px;
+    h2{
+        height: 48px;
+        float: left;
+        margin-top: 26px;
+        font-weight: 400;
+        color: #424242;
+        font-size: 28px;
+    }
+}
+.header_logo{
+    float: left;
+    width: 93px;
+    
+    >a{
+        margin-top: 23px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        background:#ff6700;
+        position: relative;
+        &:hover::before{
+            background: url(../../images/index_header/mi-home.png) no-repeat  center;
+        }
+        &:hover::after{
+            background: url(../../images/index_header/mi-home.png) no-repeat 48px  center;
+        }
+        &::before{
+            content: "";
+            display: block;
+            background: url(../../images/index_header/mi-home.png) no-repeat -48px center;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            transition: all 0.3s;
+        }
+        &::after{
+            content: "";
+            display: block;
+            background: url(../../images/index_header/mi-logo.png) no-repeat center;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            transition: all 0.3s;
+        }
+    }
+}
+ .topbar-info {
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    .link {
+        padding: 0 5px;
+        text-align: center;
+        float: left;
+        color: #757575;
+        &:hover{
+            color: #ff7600;
+        }
+    }
+    span{
+        float: left;
+        line-height: 40px;
+    }
+}
