@@ -1,9 +1,13 @@
 import $ from '../library/jquery.js';
 import { cookie } from '../library/cookie.js';
+import bigimg from '../library/bigimg.js'
+
+
 import '../library/jquery.lazyload.js'
 import '../library/sidebar.js'
 import '../library/cookie.js'
 import '../library/HappyImage.min.js'
+
 
 
 
@@ -49,16 +53,24 @@ $(function() {
             </ul>
             <div class="total-price">总计：${res.price}元</div>`
             )
-
+            let titleType = ''
             $('main').append(res.details)
             $('.option-box ul li').on('click', function() {
                 $(this).addClass('active');
                 $('.selected-list ul').html(`<li>${$('.header_sopin>.warpper>span').html()} ${$(this).text()} <span>${res.price}元</span></li>`)
+                titleType = '' + $('.header_sopin>.warpper>span').html() + $(this).text()
             })
 
             $('.btn-box .sale-btn').on('click', function() {
-                addItim(res.id, res.price, 1)
-                    // console.log(1);
+
+                if ($('.option-box ul li.active').length) {
+                    addItim(res.id, res.price, 1, titleType)
+                    location.href = '../html/shopping.html'
+                } else {
+                    alert('请选择类型')
+                }
+
+
             })
             let imgsre = '';
             picture.forEach(elm => {
@@ -116,12 +128,13 @@ $(function() {
 })
 
 
-function addItim(id, price, num) {
+function addItim(id, price, num, titleType) {
     let shop = cookie.get('shop');
     let product = {
         id: id,
         price: price,
-        num: num
+        num: num,
+        titleType: titleType
     };
     if (shop) {
         shop = JSON.parse(shop)
@@ -141,74 +154,4 @@ function addItim(id, price, num) {
     }
     cookie.set('shop', JSON.stringify(shop), 1)
     $()
-}
-
-function bigimg() {
-    let minimg = $('.hy-box ')
-
-    minimg.hover(function() {
-            let elm = {}
-                // console.log(this);
-            elm.src = $(this).children('img').attr('src')
-                // console.log(elm.src);
-            elm.bigimg = `<div class="big_img" ><img src="${elm.src}" alt=""></div>`
-            elm.movbox = `<div class="movbox"></div>`
-            $(this).append(elm.bigimg).append(elm.movbox)
-            let movebox = $('.movbox');
-            let bigpicture = $('.big_img img');
-            let small = $(this);
-            let big = $('.big_img');
-            // console.log(small.width());
-            // console.log(big.offset().width);
-            // console.log(bigpicture.offset().width);
-            // console.log(small.width() * big.width() / bigpicture.width());
-            movebox.css({
-                width: (small.width() * big.width() / bigpicture.width()) + 'px',
-                height: (small.height() * big.height() / bigpicture.height()) + 'px'
-            })
-            $(this).on('mousemove', function(ev) {
-
-                    let top = ev.pageY - small.offset().top - movebox.height() / 2;
-                    let left = ev.pageX - small.offset().left - movebox.width() / 2;
-                    let ratio = bigpicture.width() / small.width(); // 比例必须大于1
-                    // console.log(top);
-                    if (top <= 0) {
-                        top = 0;
-                    } else if (top >= small.height() - movebox.height()) {
-                        top = small.height() - movebox.height();
-                    }
-
-                    if (left <= 0) {
-                        left = 0;
-                    } else if (left >= small.width() - movebox.width()) {
-                        left = small.width() - movebox.width();
-                    }
-
-                    movebox.css({
-                        top: top + 'px',
-                        left: left + 'px'
-                    });
-
-                    bigpicture.css({
-                        top: ratio * -top + 'px',
-                        left: ratio * -left + 'px'
-                    });
-                })
-                // console.log(this);
-        }, function() {
-            $(this).children('.big_img').remove()
-            $(this).children('.movbox').remove()
-        })
-        // minimg.each(function(index, elm) {
-        //         $(elm).hover(function() {
-        //             console.log(1);
-        //             elm.src = $(this).attr('src')
-        //             console.log(elm.src);
-        //         })
-
-    //     })
-    // minimg[0].on('mouseover', function() {
-    //     console.log(1);
-    // })
-
 }

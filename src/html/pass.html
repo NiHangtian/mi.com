@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/rescet.css">
     <link rel="stylesheet" href="../style/font_fkbdvi9rsi/iconfont.css">
     <link rel="stylesheet" href="../style/pass/pass.css">
-    <script src="../js/pass/pass.js"></script>
+    <script type="module" src="../js/pass/pass.js"></script>
 </head>
 
 <body>
@@ -29,9 +29,11 @@
                     </div>
                     <div>
                         <div class="main_login">
-                            <input type="text" name="" id="">
-                            <input type="password" name="" id="">
-                            <button>登录</button>
+                            <input type="text" name="" id="phone" placeholder="请输入手机号">
+                            <p class="phone"></p>
+                            <input type="password" name="" id="password" placeholder="请输入密码">
+                            <p class="password"></p>
+                            <button id="btn">登录</button>
                             <a class="btn_gray" href="javascript:;">手机短信登录/注册</a>
                             <div class="n_links_area "> <a href="javascript:;" class="outer-link">立即注册</a><span>|</span> <a href="javascript:;" class="outer-link">忘记密码？</a> </div>
                         </div>

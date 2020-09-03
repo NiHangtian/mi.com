@@ -1,7 +1,7 @@
 import $ from '../library/jquery.js'
 import { cookie } from '../library/cookie.js'
 import notsop from './str.js'
-
+import addItim from './additim.js'
 $(function() {
     if (cookie.get('shop')) {
         let shop = JSON.parse(cookie.get('shop'))
@@ -20,7 +20,7 @@ $(function() {
                 res.forEach(elm => {
 
                     let arr = shop.filter(val => val.id == elm.id)
-                        // console.log(arr);
+                    console.log(arr);
                     let picture = JSON.parse(elm.picture)
                         // console.log(picture);
                     str += ` <div class="item-box">
@@ -32,7 +32,7 @@ $(function() {
                             <div data-v-562c5445="" class="col col-img">
                                 <a href="javascript:;"><img src="../${picture[0].src}" alt=""></a>
                             </div>
-                            <div data-v-562c5445="" class="col col-name">${elm.title} 白色</div>
+                            <div data-v-562c5445="" class="col col-name"> ${arr[0].titleType}</div>
                             <div data-v-562c5445="" data-id="${elm.id}" class="col col-price">${elm.price}元</div>
                             <div data-v-562c5445="" class="col col-num">
                                 <div class="change-goods-num clear_fix">
@@ -92,6 +92,7 @@ $(function() {
                         let num = parseInt($('.col-price[data-id="' + dataid + '"]').html())
                             // console.log(val, num);
                         $('.col-total[data-id="' + dataid + '"]')[0].innerHTML = val * num + '元';
+                        addItim(dataid, val)
                     }
                     priChange();
                 })
@@ -104,13 +105,25 @@ $(function() {
                         let num = parseInt($('.col-price[data-id="' + dataid + '"]').html())
                             // console.log(val, num);
                         $('.col-total[data-id="' + dataid + '"]')[0].innerHTML = val * num + '元';
+                        addItim(dataid, val)
                     } else {
                         alert('你他喵是黄牛吧')
                     }
                     priChange();
                 })
                 $('.goods-num').on('input', function() {
+                    let dataid = $(this).attr('data-id')
+                    let val = $('input[type="text"][data-id="' + dataid + '"]')[0].value;
+                    let num = parseInt($('.col-price[data-id="' + dataid + '"]').html())
+                        // console.log(val, num);
+                    $('.col-total[data-id="' + dataid + '"]')[0].innerHTML = val * num + '元';
+                    addItim(dataid, val)
+                    priChange()
+                    console.log(1);
+                })
 
+                $('.btn-primary').on('click', function() {
+                    purchase()
                 })
             }
         })
@@ -122,6 +135,19 @@ $(function() {
     }
 })
 
+function purchase() {
+    let num = 0
+    $('input[type="checkbox"]').each((i, elm) => {
+        if ($(elm).prop('checked') == true) {
+            num++
+        }
+    })
+    console.log(num);
+    if (num) {
+        document.body.innerHTML = ` <img style="width: 600px;height: 600px;margin:  auto;" src="../images/sidebar/zhifubao.png" alt="">
+        <h1 style="font-size: 100px;text-align:center;">快给俊哥打钱</h1>`
+    }
+}
 
 function priChange(ck) {
     let ckbox = $('input[type="checkbox"]').not($('input[data-ck="all"]'));

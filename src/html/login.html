@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/rescet.css">
     <link rel="stylesheet" href="../style/login/login.css">
+    <script type="module" src="../js/login/login.js"></script>
 </head>
 
 <body>
@@ -20,24 +21,11 @@
 
             <div class="content-cen">
                 <div class="phone_stp">
-                    <h4 class="tit_normal">
-                        国家/地区
-                    </h4>
-                    <select name="" id="sid">
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                        <option value="CN">中国</option>
-                    </select>
-                    <div class="region_tip_text">成功注册帐号后，国家/地区将不能被修改</div>
+
                     <h4 class="tit_normal">
                         手机号码
                     </h4>
-                    <div class="phone clear_fix">
+                    <div class="phone1 clear_fix">
                         <select name="" id="qvhao">
                         <option value="86">86</option>
                         <option value="86">86</option>
@@ -48,14 +36,22 @@
                         <option value="86">86</option>
                         <option value="86">86</option>
                     </select>
-                        <input class="phone_num" type="phone">
+                        <input id="phone" class="phone_num" type="phone" placeholder="请输入手机号">
+
 
                     </div>
-                    <div class="phone_not"><span>请输入手机号码</span></div>
-                    <button class="sib">立即注册</button>
+
+                    <p class="phone_not phone"></p>
+                    <input id="password" type="password" placeholder="请输入密码">
+                    <p class="password"></p>
+                    <input id="checkpass" type="password" placeholder="请再输入密码">
+                    <p class="checkpass"></p>
+                    <input class="sib" type="button" value="立即注册">
+
                 </div>
+                <div class="xieyi">已阅读并同意：小米 <a href="javascript:;">用户协议</a> 和 <a href="javascript:;">隐私政策</a></div>
             </div>
-            <div class="xieyi">已阅读并同意：小米 <a href="javascript:;">用户协议</a> 和 <a href="javascript:;">隐私政策</a></div>
+
         </div>
     </main>
 

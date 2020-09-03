@@ -61,12 +61,12 @@ main {
   color: #666;
   margin-bottom: 15px;
 }
-.phone {
+.phone1 {
   height: 42px;
   border: 1px solid #e8e8e8;
   margin-bottom: 10px;
 }
-.phone > #qvhao {
+.phone1 > #qvhao {
   float: left;
   display: inline-block;
   width: 68px;
@@ -75,14 +75,27 @@ main {
   border: 0;
   border-right: 1px solid #e8e8e8;
 }
-.phone > .phone_num {
+.phone1 > .phone_num {
   width: 260px;
   height: 40px;
+}
+.checkpass,
+.password,
+.phone {
+  height: 20px;
 }
 .phone_not {
   line-height: 20px;
   font-size: 14px;
   color: #f66;
+}
+#password,
+#checkpass {
+  box-sizing: border-box;
+  width: 330px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  padding: 0 20px;
 }
 .sib {
   background-color: #ff6700;
@@ -114,7 +127,6 @@ main {
   margin-top: 0;
   padding-top: 100px;
   width: 100%;
-  position: fixed;
   bottom: 0;
   z-index: 4;
   height: 80px;
