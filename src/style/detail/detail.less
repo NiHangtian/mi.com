@@ -137,16 +137,11 @@
             width: 560px;
             margin: 0 auto;
             position: relative;
-            overflow: hidden;
+            
             list-style: none;
             padding: 0;
-            z-index: 1;
-            >img{
-                width: 560px;
-                height: 560px;
-                opacity: 1;
-                transition:all 1s;
-            }
+           height: 560px;
+          
         }
     }
     .product-con{
@@ -367,3 +362,78 @@
     margin-left: auto;
 }
 
+.target {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    margin:20px auto;
+    .hy-dot  i{
+    background: #ccc;
+    width: 50px;
+    border-radius: 0;
+    border: 0;
+    height: 3px;
+    &.active{
+        background: #acacac;
+    }
+}
+}
+.target img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:560px;
+    height:560px;
+}
+.target{
+    overflow:visible !important;
+}
+.hy-box {
+    overflow:visible !important;
+}
+.hy-wrapper{
+    overflow:visible !important;
+}
+.hy-box img{
+    display: none;
+}
+
+
+.hy-fade-show img{
+    display: block;
+}
+.hy-fade-show{
+    z-index: 100;
+}
+.hy-prev{
+    z-index: 101;
+}
+.hy-next{
+    z-index: 101;
+}
+.hy-dot {
+    z-index: 101;
+}
+.big_img{
+    position: absolute;
+    right: -500px;
+    top: 0;
+    height: 400px;
+    width: 400px;
+   
+    border:5px solid #666;
+    overflow: hidden;
+    position: absolute;
+    >img{
+        width: 800px;
+        height: 800px;
+    }
+}
+.movbox{
+    position: absolute;
+    background: #f00;
+    opacity: 0.5;
+    // width: 100px;
+    // height: 100px;
+}
